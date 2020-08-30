@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
-import Scroll from './Scroll';
+import Scroll from './scroll';
 
 import avatar from './assets/images/34063423.jpg';
 import config from '../../../config';
