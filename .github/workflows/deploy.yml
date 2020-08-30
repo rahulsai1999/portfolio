@@ -1,0 +1,36 @@
+name: EC2 deployment
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@master
+      - name: setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: build
+        run: npm i && npm run build
+        env:
+          CI: ""
+      - name: copy
+        uses: appleboy/scp-action@master
+        with:
+          host: "15.207.214.140"
+          username: "ubuntu"
+          source: "public"
+          target: "/home/ubuntu"
+          key: ${{secrets.SSH_KEY}}
+      - name: restart
+        uses: appleboy/ssh-action@master
+        with:
+          key: ${{secrets.SSH_KEY}}
+          host: "15.207.214.140"
+          username: "ubuntu"
+          script: |
+            sudo cp -r public /var/www/rahulsai.live/
+            sudo systemctl restart nginx
