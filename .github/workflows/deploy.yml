@@ -32,5 +32,5 @@ jobs:
           host: "15.207.214.140"
           username: "ubuntu"
           script: |
-            sudo cp -r public /var/www/rahulsai.live/
+            sudo cp -r public /var/www/rahulsai.tech/
             sudo systemctl restart nginx
