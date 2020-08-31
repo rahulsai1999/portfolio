@@ -22,19 +22,24 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            Hi, I am Rahul Sai. I started out with programming in C during my
-            summer vacations when I was 10. Since then, I have evolved into a
-            Full Stack Engineer / Machine Learning Engineer.
-          </p>
-          <p className="lead mb-5">
-            I have extensive experience across various programming languages,
-            tools and frameworks; you name it and I have probably used it. I can
-            adapt to any project or team that you might need me in. P.S Check
-            out my Github profile for some projects that I have made.
+            Hi, I am Rahul Sai. I am a final-year student at VIT Vellore. I
+            started coding in C at the age of 10 and since then, I have
+            developed into a Full Stack Engineer.
+            <br />
+            <br />I have extensive experience across various programming
+            languages, tools and frameworks; you name it and I have probably
+            used it. I can adapt to any project or team that you might need me
+            in.
           </p>
           <p className="lead mb-5">
             I have previously worked with early-stage as well as funded startups
             in order to build products in tight timeframes.
+            <br />
+            <br />
+            <strong>
+              P.S Check out my Github profile for some projects that I have
+              worked on.
+            </strong>
           </p>
 
           <div className="social-icons">
@@ -64,9 +69,9 @@ const IndexPage = () => (
               <h3 className="mb-0">Full Stack Engineer</h3>
               <div className="subheading mb-3">MathonGo</div>
               <p>
-                Developed a Live Class Platform from scratch (MERN stack) with a
-                low latency public and private chat system along with
-                Interactive Polls to improve user engagement.
+                Developed a Live Class Platform from scratch (MERN stack) with
+                live streaming capabilities, low latency public and private chat
+                system along with Interactive Polls to improve user engagement.
               </p>
               <p>
                 Also developed internal tools to grade and tag questions for
@@ -74,7 +79,7 @@ const IndexPage = () => (
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">April 2020 - June 2020</span>
+              <span className="text-primary">April 2020 - Present</span>
             </div>
           </div>
 
@@ -253,12 +258,12 @@ const IndexPage = () => (
           <p>
             Apart from being a developer, I enjoy most of my time gathering
             technical knowledge in all forms possible and not just limited to
-            topics related to computers. I have a fascination with cars and I
-            happen to have an extensive knowledge on automotive engineering. I
-            am an avid Formula 1 fan, and I also enjoy simulator racing.
+            topics related to computers.
           </p>
           <p className="mb-0">
-            When forced indoors, I am a movie and series buff.
+            I have a fascination with cars and I happen to have an extensive
+            knowledge on automotive engineering. I am an avid Formula 1 fan, and
+            I also enjoy simulator racing.
           </p>
         </div>
       </section>
